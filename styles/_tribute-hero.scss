@@ -1,0 +1,43 @@
+#tribute-hero {
+    background-color: $clr-primary;
+
+    position: relative;
+
+    height: 100vh;
+}
+
+#img-div {
+    width: 100%;
+    max-width: 500px;
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    
+    overflow: hidden;
+
+    img {
+        opacity: 50%;
+
+        max-width: 100%;
+        height: auto;
+
+        position: relative;
+        bottom: -5px;
+    }
+}
+
+// IMAGE WILL NEVER APPEAR ABOVE CONTAINER.
+@media screen and (min-width: 500px) {
+    #img-div {
+        img {
+            bottom: -50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #tribute-hero {
+        height: 70vh;
+    }
+}

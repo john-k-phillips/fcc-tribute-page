@@ -1,1 +1,48 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+#tribute-hero {
+  background-color: #353535;
+  position: relative;
+  height: 100vh;
+}
+
+#img-div {
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  overflow: hidden;
+}
+
+#img-div img {
+  opacity: 50%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  bottom: -5px;
+}
+
+@media screen and (min-width: 500px) {
+  #img-div img {
+    bottom: -50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #tribute-hero {
+    height: 70vh;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=styles.css.map */
