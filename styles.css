@@ -3,6 +3,56 @@
   background-color: #353535;
   position: relative;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tribute-hero div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+#tribute-hero a {
+  margin-top: 2.5em;
+  color: #353535;
+  background-color: white;
+  padding: 0.6em;
+  border-radius: 2em;
+  width: 40%;
+  max-width: 200px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#tribute-hero h1 {
+  width: 80%;
+  font-size: clamp(2.2rem, 6vw, 8rem);
+  margin-top: 0.5em;
+}
+
+#tribute-hero span {
+  font-size: clamp(0.8em, 2vw, 2em);
+  width: 80%;
+  color: #CBCBCB;
 }
 
 #img-div {
@@ -31,6 +81,27 @@
 @media screen and (min-width: 1024px) {
   #tribute-hero {
     height: 70vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #tribute-hero div {
+    width: 60%;
+  }
+  #tribute-hero a {
+    width: 50%;
+    max-width: 400px;
+    font-size: 2em;
+  }
+  #tribute-hero h1 {
+    width: auto;
+  }
+  #tribute-hero span {
+    width: auto;
+    margin-left: 4%;
   }
 }
 
