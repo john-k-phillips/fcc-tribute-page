@@ -105,6 +105,133 @@
   }
 }
 
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+
+.timeline li {
+  padding: 20px;
+  background-color: #353535;
+  border-radius: 0.8em;
+  margin-bottom: 1em;
+}
+
+.timeline li a {
+  color: #CBCBCB;
+  font-style: italic;
+}
+
+.timeline ul li:last-child {
+  margin-bottom: 4em;
+}
+
+.timeline ul li:first-child {
+  margin-top: 4em;
+}
+
+.timeline-content h2 {
+  margin-bottom: 0.5em;
+  color: #CBCBCB;
+  font-size: 0.9em;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #353535;
+    left: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .timeline ul li {
+    width: 50%;
+    margin-bottom: 2em;
+  }
+  .timeline ul li:nth-child(even) {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(38px);
+            transform: translateX(38px);
+  }
+  .timeline ul li:nth-child(odd) {
+    position: relative;
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  .timeline ul li:nth-child(odd)::after {
+    content: '';
+    background-color: #353535;
+    position: absolute;
+    width: 35px;
+    right: 0px;
+    top: 48%;
+    -webkit-transform: translateX(35px);
+            transform: translateX(35px);
+    height: 5px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    content: '';
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    top: 44%;
+    -webkit-transform: translateX(-42px);
+            transform: translateX(-42px);
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 3px solid #353535;
+    z-index: 10;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    content: '';
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    top: 44%;
+    -webkit-transform: translateX(43px);
+            transform: translateX(43px);
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 3px solid #353535;
+    z-index: 10;
+  }
+  .timeline ul li:nth-child(even)::after {
+    content: '';
+    background-color: #353535;
+    position: absolute;
+    width: 35px;
+    left: 0px;
+    top: 50%;
+    -webkit-transform: translateX(-35px);
+            transform: translateX(-35px);
+    height: 5px;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
