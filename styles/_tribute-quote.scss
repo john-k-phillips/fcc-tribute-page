@@ -1,0 +1,54 @@
+#tribute-quote {
+    width: 100%;
+    padding: 4em;
+    background-color: $clr-primary;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    .quote-container {
+        width: 50%;
+        min-width: 280px;
+        max-width: 500px;
+
+        padding: 2em;
+        background-color: $clr-secondary;
+        color: $clr-primary;
+        border-radius: 1em;
+        text-align: center;
+        margin-bottom: 1.5em;
+
+        position: relative;
+        img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 15%;
+            transform: translate(15px, -25px)
+        }
+        p {
+            font-size: 1.4em;
+        }
+    }
+    .codedby {
+        color: $clr-secondary;
+        position: absolute;
+        bottom: 10px;
+        a {
+            color: $clr-accent;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #tribute-quote {
+        .quote-container {
+            padding-top: 4em;
+        }
+    }
+}
