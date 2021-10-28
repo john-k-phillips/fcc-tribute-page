@@ -19,4 +19,5 @@ freeCodeCamp is a non-profit organization that consists of an interactive learni
 This project was one of the first projects I had created for my 2022 journey. After studying computer science, I thought Alan Turing was a fitting member of the programming world
 to tribute to.
 
+
 The most challenging part of this project was the time-line, created via the before & after pseudo elements.
